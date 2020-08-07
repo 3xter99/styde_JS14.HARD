@@ -1,7 +1,7 @@
 // 1)
 const num = 266219;
 // 2)
-const newNum = num.toString().split('').map(item => parseInt(item)).reduce((a, b) => a * b);
+const newNum = num.toString().split('').map(item => +item).reduce((a, b) => a * b);
 console.log(newNum);
 // 3)
 const pow3 = newNum ** 3;
