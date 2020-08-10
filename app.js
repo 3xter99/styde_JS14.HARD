@@ -29,16 +29,21 @@ if (lang === 'ru' || lang === 'en') {
     alert(`Нужно было быть внимательнее... Написано же en или ru, а ты ввел ${lang}`)
 }
 // c
-let weekday = {
-    ru: 'Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье',
-    en: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'
-}
+let map = new Map([
+    ['ru', 'Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'],
+    ['en', 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday']
+])
+
 lang = prompt('Выберете язык. en или ru')
 
-alert(weekday[lang])
+alert(map.get(lang))
 // 2)
 
 let namePerson = prompt('Введите имя')
 let message = (namePerson === 'Артем') ? 'Директор' :
     (namePerson === 'Максим') ? 'Преподаватель' : 'Студент'
 console.log(message);
+
+
+
+
