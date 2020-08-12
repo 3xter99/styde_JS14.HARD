@@ -1,10 +1,16 @@
 const arr = ['34124', '2345463', '562352', '424112', '85434', '221145', '8543'];
 
-for (let key of arr) {
-    if (+key[0] === 2 || +key[0] === 4) {
-        console.log(key);
-    }
-}
+const newArr = arr.filter(elem => {
+     return +elem[0] === 2 || +elem[0] === 4
+})
+console.log(newArr);
+
+
+// for (let key of arr) {
+//     if (+key[0] === 2 || +key[0] === 4) {
+//         console.log(key);
+//     }
+// }
 
 // 2
 
