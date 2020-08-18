@@ -67,13 +67,11 @@ const miniData = function () {
     let data = new Date();
     let year = data.getFullYear();
     let numberMonth = data.getMonth() + 1;
-    let numberWeekDay = data.getDay()
     let day = data.getDate()
     let numberHour = data.getHours();
     let numberMinutes = data.getMinutes();
     let seconds = data.getSeconds();
-    let month;
-    let weekDay;
+
 
     miniText.textContent = `${addZero(numberHour)}:${addZero(numberMinutes)}:${addZero(seconds)}  ${addZero(numberMonth)}:${addZero(day)}:${addZero(year)}`;
 
